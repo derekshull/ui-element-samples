@@ -34,10 +34,11 @@ limitations under the License.
     </ul>
   </nav>
 
-  <sc-view remote class="view-home" route="^/$"></sc-view>
-  <sc-view class="view-about visible" route="^/about/(.*)">
-    <h1>About</h1>
+  <sc-view class="view-home visible" route="^/$">
+    <h1>Home</h1>
     <p>This is the about page.</p>
+  </sc-view>
+  <sc-view remote class="view-about" route="^/about/(.*)">
   </sc-view>
   <sc-view remote class="view-contact" route="^/contact/(.*)"></sc-view>
   <sc-view remote class="view-misc" route="^/misc/(.*)"></sc-view>
